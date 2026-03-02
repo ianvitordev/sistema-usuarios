@@ -29,8 +29,8 @@ public CommandLineRunner initAdmin() {
             admin.setName("Administrador");
             admin.setEmail("admin@email.com");
             admin.setPassword(passwordEncoder.encode("123456"));
-            admin.setRole(User.Role.ADMIN);   // 🔥 OBRIGATÓRIO
-            admin.setActive(true);            // 🔥 RECOMENDADO
+            admin.setRole(User.Role.ADMIN);   
+            admin.setActive(true);            
 
             userRepository.save(admin);
         }
